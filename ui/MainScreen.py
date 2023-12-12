@@ -1,3 +1,6 @@
 from utils.ScreenUtils import *
 
-#Refais correctement
+def showMainScreen():
+    screen = Screen("Jeu de Nim !")
+
+    screen.run()

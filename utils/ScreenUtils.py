@@ -248,7 +248,7 @@ class Picture:
         self.image = pygame.transform.scale(self.image, (width, height))
 
 class InputBox:
-    def __init__(self, x, y, width, height, font_size=30, text_color=(0, 0, 0), border_color=(0, 0, 0)):
+    def __init__(self, x, y, width, height, font_size=30, text_color=(0, 0, 0), border_color=(253, 247, 228)):
         self.rect = pygame.Rect(x, y, width, height)
         self.font = pygame.font.Font(None, font_size)
         self.text_color = text_color
