@@ -90,6 +90,7 @@ class Button:
         self.shadow_color = pygame.Color(shadow_color)
         self.click_handler = click_handler
 
+
     def draw(self, screen):
         """
         Dessine le bouton.
