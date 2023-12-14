@@ -1,11 +1,14 @@
-from ui.NameScreen import showNameScreen
-import random
+from ui.MainScreen import showMainScreen
+from utils.GameUtils import generateId
+from utils.RoomUtils import createRoom
+from common.NimGame import Player
+from client.NimClient import openSession
 
-def generateId():
-    id_list = [random.randint(0, 9) for _ in range(5)]
-    return id_list
-
-player_id = generateId()
+player_id = generateId(5)
 player_name = "PLAYER_" + "".join(map(str, player_id))
+player = Player(player_name)
+client_socket = openSession()
+player.setClientSocket(client_socket)
+createRoom(player)
 
-showNameScreen()
+showMainScreen()
