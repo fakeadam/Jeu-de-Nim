@@ -22,7 +22,6 @@ class Screen:
         self.height = height
         self.title = title
         self.elements = []
-
         pygame.init()
         self.screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption(title)

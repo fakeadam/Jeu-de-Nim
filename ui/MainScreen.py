@@ -11,7 +11,6 @@ def showMainScreen():
     background.resize(1280,720)
     credit = Text(10,700,"Projet NSI 2023 réalisé par Adame et Thomas",10)
     title = Text(690,85,"JEU DE NIM",70,)
-
     menuArea = Area(650,75,550,550)
     soloBtn = Button(710,190,"Solo",handler_button,425,105)
     localBtn = Button(710,325,"Local",handler_button,425,105)
